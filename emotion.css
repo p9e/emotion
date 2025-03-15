@@ -13,10 +13,6 @@
   html { color: indigo; background: lemonchiffon }
   :any-link { color: mediumblue }
   ::selection { color: lemonchiffon; background: purple }
-  em { text-shadow: 1pt 1pt 1pt mediumpurple }
-  strong { text-shadow: 1pt 1pt 1pt fuchsia }
-  b { text-shadow: 1pt 1pt 1pt skyblue }
-  i { text-shadow: 1pt 1pt 1pt #ec0 }
 }
 
 html {
