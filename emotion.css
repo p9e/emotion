@@ -1,0 +1,61 @@
+@media (color) {
+  html { color: lemonchiffon; background: indigo }
+  :any-link { color: lightskyblue; background: transparent }
+  ::selection { color: purple; background: lemonchiffon }
+  em { text-shadow: 1pt 1pt 1pt mediumpurple }
+  strong { text-shadow: 1pt 1pt 1pt fuchsia }
+  abbr { text-shadow: 1pt 1pt 1pt fuchsia }
+  b { text-shadow: 1pt 1pt 1pt skyblue }
+  i { text-shadow: 1pt 1pt 1pt yellow }
+}
+
+@media (prefers-color-scheme: light) {
+  html { color: indigo; background: lemonchiffon }
+  :any-link { color: mediumblue }
+  ::selection { color: lemonchiffon; background: purple }
+  em { text-shadow: 1pt 1pt 1pt mediumpurple }
+  strong { text-shadow: 1pt 1pt 1pt fuchsia }
+  b { text-shadow: 1pt 1pt 1pt skyblue }
+  i { text-shadow: 1pt 1pt 1pt #ec0 }
+}
+
+html {
+  font-family: monospace;
+  font-size: max(3ch, 1vw + 1vh);
+  line-height: 1.618;
+  transition: 1s;
+}
+
+h1 {
+  font-size: 1.618rem;
+  font-weight: 700;
+  margin-block: 1rem;
+}
+
+h2 { font-size: 1.382rem }
+dt { font-size: 1.236rem }
+dt, abbr, em { font-weight: 700 }
+dt ~ dt { margin-top: 1em }
+
+article {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+footer {
+  align-self: center;
+  contain: layout;
+  display: flex;
+  flex-flow: column;
+  margin: 2rem auto;
+}
+
+footer p {
+  font-size: 1.236rem;
+  margin: 0;
+}
+
+@media (orientation: portrait) {
+  html { font-family: sans-serif }
+}
